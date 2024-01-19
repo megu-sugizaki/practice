@@ -7,6 +7,7 @@ class JavaPracticeClass {
 	    Scanner scanner = new Scanner(System.in);
 	    System.out.print("何人分の情報を入力しますか:");
 	    int amount = scanner.nextInt();
+	    int maxAge = 0;
 	    
 	    for (int i = 0; i <= amount; i++) {
 	      System.out.println(i + 1 + "人目");
@@ -21,6 +22,12 @@ class JavaPracticeClass {
 	      System.out.print("体重(kg)：");
 	      double weight = scanner.nextDouble();
 	      JavaSubClass.printData(firstName, lastName, age, height, weight);
+	      
+	      if (age > maxAge) {
+	        maxAge = age;
+	      }
+	      
+	      System.out.println("最高年齢は" + maxAge + "です");
 	    }
 	  }
 }
