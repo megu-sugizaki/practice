@@ -2,11 +2,13 @@ package practice;
 
 class JavaPracticeClass {
 	public static void main(String[] args) {
-	    // Personクラスのインスタンスを生成し、変数person1に代入してください
-	    JavaSubClass person1 = new JavaSubClass(); 
+	    JavaSubClass person1 = new JavaSubClass();
+	    // person1に対して、helloメソッドを呼び出してください
+	    person1.hello();
 	    
-	    // Personクラスのインスタンスを生成し、変数person2に代入してください
 	    JavaSubClass person2 = new JavaSubClass();
+	    // person2に対して、helloメソッドを呼び出してください
+	    person2.hello();
 	    
 	  }
 }

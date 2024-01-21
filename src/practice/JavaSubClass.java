@@ -1,4 +1,9 @@
 package practice;
 
-public class JavaSubClass {
-}
+class JavaSubClass {
+	  // インスタンスメソッドhelloを定義してください
+	  public void hello(){
+	    System.out.println("こんにちは");
+	  }
+	  
+	}
