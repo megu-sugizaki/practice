@@ -2,12 +2,12 @@ package practice;
 
 class JavaPracticeClass {
 	public static void main(String[] args) {
-	    // newの引数に「Kate Jones」を渡してください
-	    JavaSubClass person1 = new JavaSubClass("Kate Jones");
-	    person1.hello();
+	    JavaSubClass person1 = new JavaSubClass("Kate", "Jones", 27, 1.6, 50.0);
 	    
-	    // newの引数に「John Christopher Smith」を渡してください
-	    JavaSubClass person2 = new JavaSubClass("John Christopher Smith");
-	    person2.hello();
+	    System.out.println(person1.firstName);
+	    System.out.println(person1.lastName);
+	    System.out.println(person1.age);
+	    System.out.println(person1.height);
+	    System.out.println(person1.weight);
 	  }
 }

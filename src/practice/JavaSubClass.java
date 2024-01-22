@@ -1,18 +1,20 @@
 package practice;
 
 class JavaSubClass {
-	public String name;
+	// 以下にインスタンスフィールドを定義してください
+	  public String firstName;
+	  public String lastName;
+	  public int age;
+	  public double height;
+	  public double weight;
 
-	  // コンストラクタがString型の引数を受け取るようにしてください
-	  JavaSubClass(String name) {
-	    System.out.println("インスタンスが生成されました");
-	    // インスタンスフィールドnameに値をセットしてください
-	    this.name = name;
-	    
-	  }
-
-	  public void hello() {
-	    System.out.println("こんにちは、私は" + this.name + "です");
+	  // 以下にコンストラクタを定義し、インスタンスフィールドに値をセットしてください
+	  JavaSubClass(String firstName, String lastName, int age, double height, double weight){
+	    this.firstName = firstName;
+	    this.lastName = lastName;
+	    this.age = age;
+	    this.height = height;
+	    this.weight = weight;
 	  }
 	  
 	}
