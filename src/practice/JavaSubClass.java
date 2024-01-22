@@ -1,12 +1,15 @@
 package practice;
 
 class JavaSubClass {
-	   // インスタンスフィールドnameを定義してください
-	  public String name;
+	public String name;
+
+	  // コンストラクタを定義してください
+	  JavaSubClass(){
+	    System.out.println("インスタンスが生成されました");
+	  }
 
 	  public void hello() {
-	    // thisを用いて、「こんにちは、私は◯◯です」で出力するように以下を書き換えてください
-	    System.out.println("こんにちは、私は" + this.name + "です" );
+	    System.out.println("こんにちは、私は" + this.name + "です");
 	  }
 	  
 	}
