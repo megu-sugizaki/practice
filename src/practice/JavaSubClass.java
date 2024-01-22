@@ -8,29 +8,45 @@ class JavaSubClass {
 	  private int age;
 	  private double height;
 	  private double weight;
-
-	  JavaSubClass(String firstName, String lastName, int age, double height, double weight) {
+	  // インスタンスフィールド「job」を追加してください
+	  private String job;
+	  
+	  // コンストラクタを書き換えてください
+	  JavaSubClass(String firstName, String lastName, int age, double height, double weight, String job) {
 	    JavaSubClass.count++;
 	    this.firstName = firstName;
 	    this.lastName = lastName;
 	    this.age = age;
 	    this.height = height;
 	    this.weight = weight;
+	    this.job = job;
 	  }
-
-	  JavaSubClass(String firstName, String middleName, String lastName, int age, double height, double weight) {
-	    this(firstName, lastName, age, height, weight);
+	  
+	  // コンストラクタを書き換えてください
+	  JavaSubClass(String firstName, String middleName, String lastName, int age, double height, double weight, String job) {
+	    this(firstName, lastName, age, height, weight, job);
 	    this.middleName = middleName;
 	  }
 
 	  public String getMiddleName() {
 	    return this.middleName;
 	  }
+	  
+	  // jobのゲッターを定義してください
+	  public String getJob(){
+	    return this.job;
+	  }
 
-	  // middleNameフィールドのセッターを定義してください
-	  public void setMiddleName(String middleName){
+
+	  public void setMiddleName(String middleName) {
 	    this.middleName = middleName;
 	  }
+	  
+	  // jobのセッターを定義してください
+	  public void setJob(String job){
+	    this.job = job;
+	  }
+	  
 
 	  public String fullName() {
 	    if (this.middleName == null) {
@@ -44,6 +60,9 @@ class JavaSubClass {
 	    System.out.println("私の名前は" + this.fullName() + "です");
 	    System.out.println("年齢は" + this.age + "歳です");
 	    System.out.println("BMIは" + Math.round(this.bmi()) + "です");
+	    // 「仕事は◯◯です」と出力してください
+	    System.out.println("仕事は" + this.job + "です");
+	    
 	  }
 
 	  public double bmi() {
