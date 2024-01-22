@@ -2,7 +2,11 @@ package practice;
 
 class JavaSubClass {
 	public static int count = 0;
-	  public String firstName, lastName;
+	  public String firstName;
+	  // インスタンスフィールドmiddleNameを定義してください
+	  public String middleName;
+	  
+	  public String lastName;
 	  public int age;
 	  public double height, weight;
 
@@ -10,6 +14,17 @@ class JavaSubClass {
 	    JavaSubClass.count++;
 	    this.firstName = firstName;
 	    this.lastName = lastName;
+	    this.age = age;
+	    this.height = height;
+	    this.weight = weight;
+	  }
+	  
+	  // middleNameを受け取るコンストラクタを定義してください
+	  JavaSubClass(String firstName, String middleName, String lastName, int age, double height, double weight) {
+	    JavaSubClass.count++;
+	    this.firstName = firstName;
+	    this.lastName = lastName;
+	    this.middleName = middleName;
 	    this.age = age;
 	    this.height = height;
 	    this.weight = weight;
@@ -29,8 +44,7 @@ class JavaSubClass {
 	    return this.weight / this.height / this.height;
 	  }
 
-	  // クラスメソッドprintCount()を定義してください
-	  public static void printCount(){
+	  public static void printCount() {
 	    System.out.println("合計" + JavaSubClass.count + "人です");
 	  }
 	  
