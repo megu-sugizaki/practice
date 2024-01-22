@@ -3,9 +3,12 @@ package practice;
 class JavaSubClass {
 	public String name;
 
-	  // コンストラクタを定義してください
-	  JavaSubClass(){
+	  // コンストラクタがString型の引数を受け取るようにしてください
+	  JavaSubClass(String name) {
 	    System.out.println("インスタンスが生成されました");
+	    // インスタンスフィールドnameに値をセットしてください
+	    this.name = name;
+	    
 	  }
 
 	  public void hello() {
