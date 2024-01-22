@@ -1,8 +1,7 @@
 package practice;
 
 class JavaSubClass {
-	// 以下をすべてprivateなフィールドに書き換えてください
-	  private static int count = 0;
+	private static int count = 0;
 	  private String firstName;
 	  private String middleName;
 	  private String lastName;
@@ -22,6 +21,11 @@ class JavaSubClass {
 	  JavaSubClass(String firstName, String middleName, String lastName, int age, double height, double weight) {
 	    this(firstName, lastName, age, height, weight);
 	    this.middleName = middleName;
+	  }
+
+	  // middleNameフィールドのゲッターを定義してください
+	  public String getMiddleName(){
+	    return this.middleName;
 	  }
 
 	  public String fullName() {
@@ -45,5 +49,4 @@ class JavaSubClass {
 	  public static void printCount() {
 	    System.out.println("合計" + JavaSubClass.count + "人です");
 	  }
-	  
 	}
