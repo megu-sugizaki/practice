@@ -8,8 +8,8 @@ class JavaPracticeClass {
 	    JavaSubClass person2 = new JavaSubClass("John", "Smith", 65, 1.75, 80.0);
 	    person2.printData();
 	    
-	    // 「合計◯◯人です」と出力してください
-	    System.out.println("合計" + JavaSubClass.count + "人です");
+	    // printCountメソッドを呼び出してください
+	    JavaSubClass.printCount();
 	    
 	  }
 }
