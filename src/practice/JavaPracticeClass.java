@@ -11,5 +11,17 @@ class JavaPracticeClass {
 	    System.out.print("走る距離を入力してください：");
 	    int distance = scanner.nextInt();
 	    bicycle1.run(distance);
+	    System.out.println("=================");
+	    JavaThirdClass car1 = new JavaThirdClass("フェラーリ", "赤");
+	    System.out.println("【車の情報】");
+	    car1.printData();
+	    System.out.println("-----------------");
+	    System.out.print("走る距離を入力してください：");
+	    int carDistance = scanner.nextInt();
+	    car1.run(carDistance);
+	    System.out.println("-----------------");
+	    System.out.print("給油する量を入力してください：");
+	    int litre = scanner.nextInt();
+	    car1.charge(litre);
 	  }
 }
