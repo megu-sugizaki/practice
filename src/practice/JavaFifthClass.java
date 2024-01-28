@@ -1,7 +1,7 @@
 package practice;
 
 class JavaFifthClass{
-	  private String firstName;
+	private String firstName;
 	  private String middleName;
 	  private String lastName;
 	  private int age;
@@ -39,5 +39,15 @@ class JavaFifthClass{
 
 	  public double bmi() {
 	    return this.weight / this.height / this.height;
+	  }
+	  
+	  // Car型の引数を受け取るbuyメソッドを定義してください
+	  public void buy(JavaThirdClass car){
+	    car.setOwner(this);
+	  }
+	  
+	  // Bicycle型の引数を受け取るbuyメソッドを定義してください
+	  public void buy(JavaSubClass bicycle){
+	    bicycle.setOwner(this);
 	  }
 }

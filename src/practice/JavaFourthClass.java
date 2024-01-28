@@ -4,7 +4,6 @@ abstract class JavaFourthClass{
 	private String name;
 	  private String color;
 	  protected int distance = 0;
-	  // インスタンスフィールドownerを定義してください
 	  private JavaFifthClass owner;
 
 	  JavaFourthClass(String name, String color) {
@@ -21,23 +20,18 @@ abstract class JavaFourthClass{
 	  public int getDistance() {
 	    return this.distance;
 	  }
-	  
-	  // ownerフィールドのゲッターを定義してください
-	  public JavaFifthClass getOwner(){
+	  public JavaFifthClass getOwner() {
 	    return this.owner;
 	  }
-	  
 	  public void setName(String name) {
 	    this.name = name;
 	  }
 	  public void setColor(String color) {
 	    this.color = color;
 	  }
-	  
-	  // ownerフィールドのセッターを定義してください
-	  public void setOwner(JavaFifthClass person){
+	  public void setOwner(JavaFifthClass person) {
 	    this.owner = person;
-	   }
+	  }
 
 	  public void printData() {
 	    System.out.println("名前：" + this.name);

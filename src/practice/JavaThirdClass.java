@@ -1,7 +1,7 @@
 package practice;
 
 class JavaThirdClass extends JavaFourthClass {
-	  private int fuel = 50;
+	private int fuel = 50;
 
 	  JavaThirdClass(String name, String color) {
 	    super(name, color);
