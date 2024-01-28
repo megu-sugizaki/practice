@@ -20,7 +20,7 @@ class JavaFifthClass{
 	    this(firstName, lastName, age, height, weight);
 	    this.middleName = middleName;
 	  }
-
+	  
 	  public String fullName() {
 	    if (this.middleName == null) {
 	      return this.firstName + " " + this.lastName;
@@ -41,13 +41,8 @@ class JavaFifthClass{
 	    return this.weight / this.height / this.height;
 	  }
 	  
-	  // Car型の引数を受け取るbuyメソッドを定義してください
-	  public void buy(JavaThirdClass car){
-	    car.setOwner(this);
-	  }
-	  
-	  // Bicycle型の引数を受け取るbuyメソッドを定義してください
-	  public void buy(JavaSubClass bicycle){
-	    bicycle.setOwner(this);
+	  // 以下2つを一つのメソッドで書き換えてください
+	  public void buy(JavaFourthClass vehicle){
+	    vehicle.setOwner(this);
 	  }
 }
