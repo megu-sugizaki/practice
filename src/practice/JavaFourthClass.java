@@ -1,9 +1,8 @@
 package practice;
 
-class JavaFourthClass{
-	private String name;
+abstract class JavaFourthClass{
+	  private String name;
 	  private String color;
-	  // protectedを用いて書き換えてください
 	  protected int distance = 0;
 
 	  JavaFourthClass(String name, String color) {
@@ -31,4 +30,7 @@ class JavaFourthClass{
 	    System.out.println("色：" + this.color);
 	    System.out.println("走行距離：" + this.distance + "km");
 	  }
+	  
+	  // 抽象メソッドrunを定義してください
+	  public abstract void run(int distance);
 }

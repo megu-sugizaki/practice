@@ -15,7 +15,7 @@ class JavaThirdClass extends JavaFourthClass {
 	    super.printData();
 	    System.out.println("ガソリン量：" + this.fuel + "L");
 	  }
-	  
+
 	  public void run(int distance) {
 	    System.out.println(distance + "km走ります");
 	    if (distance <= this.fuel) {

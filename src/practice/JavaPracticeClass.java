@@ -12,7 +12,6 @@ class JavaPracticeClass {
 	    System.out.println("-----------------");
 	    System.out.print("走る距離を入力してください：");
 	    int carDistance = scanner.nextInt();
-	    // runメソッドを呼び出して、引数にcarDistanceを渡してください
 	    car.run(carDistance);
 	    
 	    System.out.println("-----------------");
@@ -26,8 +25,6 @@ class JavaPracticeClass {
 	    System.out.println("-----------------");
 	    System.out.print("走る距離を入力してください：");
 	    int bicycleDistance = scanner.nextInt();
-	    // runメソッドを呼び出して、引数にbicycleDistanceを渡してください
 	    bicycle.run(bicycleDistance);
-	    
 	  }
 }
