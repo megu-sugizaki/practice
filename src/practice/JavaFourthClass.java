@@ -1,12 +1,12 @@
 package practice;
 
 class JavaFourthClass{
-	  private String name;
+	private String name;
 	  private String color;
-	  private int distance = 0;
-	  
-	  // Vehicleクラスのコンストラクタを定義してください
-	  JavaFourthClass(String name, String color){
+	  // protectedを用いて書き換えてください
+	  protected int distance = 0;
+
+	  JavaFourthClass(String name, String color) {
 	    this.name = name;
 	    this.color = color;
 	  }
@@ -31,6 +31,4 @@ class JavaFourthClass{
 	    System.out.println("色：" + this.color);
 	    System.out.println("走行距離：" + this.distance + "km");
 	  }
-	
-	
 }

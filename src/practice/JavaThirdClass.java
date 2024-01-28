@@ -1,11 +1,9 @@
 package practice;
 
 class JavaThirdClass extends JavaFourthClass {
-	 private int fuel = 50;
-	  
-	  // Carクラスのコンストラクタを定義し、
-	  // superを用いてスーパークラスのコンストラクタを呼び出してください
-	  JavaThirdClass(String name, String color){
+	private int fuel = 50;
+
+	  JavaThirdClass(String name, String color) {
 	    super(name, color);
 	  }
 
@@ -15,6 +13,18 @@ class JavaThirdClass extends JavaFourthClass {
 
 	  public void printData() {
 	    super.printData();
+	    System.out.println("ガソリン量：" + this.fuel + "L");
+	  }
+	  
+	  public void run(int distance) {
+	    System.out.println(distance + "km走ります");
+	    if (distance <= this.fuel) {
+	      this.distance += distance;
+	      this.fuel -= distance;
+	    } else {
+	      System.out.println("ガソリンが足りません");
+	    }
+	    System.out.println("走行距離：" + this.distance + "km");
 	    System.out.println("ガソリン量：" + this.fuel + "L");
 	  }
 
