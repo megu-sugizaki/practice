@@ -6,14 +6,11 @@ class JavaThirdClass extends JavaFourthClass {
 	  public int getFuel() {
 	    return this.fuel;
 	  }
-	  
-	  // printDataメソッドを定義してください
-	  public void printData(){
-	    System.out.println("名前：" + this.getName());
-	    System.out.println("色：" + this.getColor());
-	    System.out.println("走行距離：" + this.getDistance() + "km");
-	    System.out.println("ガソリン量：" + this.fuel + "L");
-	    
+
+	  public void printData() {
+	    // superを用いて、以下の重複部分を書き換えてください
+	    super.printData();
+	    System.out.println("ガソリン量：" + this.fuel + " L");
 	  }
 
 	  public void charge(int litre) {
